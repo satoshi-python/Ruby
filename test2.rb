@@ -156,3 +156,102 @@ print("\"Ax\"..\"Bc\" is \n")
 for str in "Ax".."Bb" do
   print("str = "+str + "\n")
 end
+
+print("18...20 is \n")
+(18..20).each{|num|
+  print("num = ", num,"\n")
+}
+
+print("\n")
+#print("¥"Ax¥"..¥"Bc¥" is ¥n")
+("Ax"..."Bc").each do |str|
+  print("str = ", str, "\n")
+end
+
+print("\n")
+print("3.times\n")
+3.times{|num|
+  print("num = ", num, "\n")
+}
+
+print("6.upto(8)\n")
+6.upto(8){|num|
+  print("num = ", num, "\n")
+}
+
+print("8.downto(6)\n")
+8.downto(6) do |num|
+  print("num = ", num, "\n")
+end
+
+print("\n")
+
+print("2.4step(5.3, 0.8)\n")
+2.4.step(5.3, 0.8){|num|
+  print(" num = ", num, "\n")
+}
+
+print("\n")
+
+num = 1
+loop{
+  print("num = ", num, "\n")
+  num += 1
+  if num > 10 then
+    break
+  end
+}
+
+print("\n")
+
+count = 1
+print("[start]\n")
+("aa"..."az").each{|str|
+  print(str,"\n")
+  count += 1
+  if count > 10 then
+    break
+  end
+}
+
+print("[end]\n")
+
+print("\n")
+
+count = 0
+("aa"..."az").each{|str|
+  count += 1
+  if count % 3 != 0 then
+    next
+  end
+
+  print(str, "\n")
+}
+
+print("end \n\n")
+
+count = 0
+
+print("start:\n")
+("aa".."ae").each{|str|
+  count += 1
+  if count % 3  == 0 then
+    redo
+  end
+
+  print(count, ":", str, "\n")
+}
+
+print("\n")
+
+
+num = 2
+print("start:\n")
+
+num *= 2 while num < 1000
+print("num = ", num, "\n")
+
+print("end\n\n")
+
+
+
