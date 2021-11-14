@@ -44,3 +44,23 @@ array[1] = "Blue"
 print(array[0], "\n")
 print(array[1], "\n")
 print(array[2], "\n")
+
+for var in array do
+  print("color = ", var, "\n")
+end
+
+array = [80, 90, 67]
+sum = 0
+array.each{|num|
+  sum += num
+  print("cost:", num, "yen\n")
+}
+print("sum costs:", sum, "yen\n")
+print("\n")
+
+personals = [["satou", 20], ["yamada", 28], ["katou", 17]]
+for array in personals do
+  print("name: ", array[0], "\n")
+  print("age: ", array[1], "\n")
+end
+print("\n")
