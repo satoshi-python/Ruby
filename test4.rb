@@ -111,3 +111,6 @@ p value_array
 print("to_a methods \n")
 array = hash.to_a
 p array
+
+print("\n")
+
